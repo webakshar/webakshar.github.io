@@ -1,8 +1,3 @@
-/**
- * author Christopher Blum
- *    - based on the idea of Remy Sharp, http://remysharp.com/2009/01/26/element-in-view-event-plugin/
- *    - forked from http://github.com/zuk/jquery.inview/
- */
 (function (factory) {
   if (typeof define == 'function' && define.amd) {
     // AMD
@@ -22,16 +17,6 @@
     add: function(data) {
       inviewObjects[data.guid + "-" + this[expando]] = { data: data, $element: $(this) };
 
-      // Use setInterval in order to also make sure this captures elements within
-      // "overflow:scroll" elements or elements that appeared in the dom tree due to
-      // dom manipulation and reflow
-      // old: $(window).scroll(checkInView);
-      //
-      // By the way, iOS (iPad, iPhone, ...) seems to not execute, or at least delays
-      // intervals while the user scrolls. Therefore the inview event might fire a bit late there
-      //
-      // Don't waste cycles with an interval until we get at least one element that
-      // has bound to the inview event.
       if (!timer && !$.isEmptyObject(inviewObjects)) {
          timer = setInterval(checkInView, 250);
       }

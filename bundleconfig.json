@@ -1,0 +1,24 @@
+[
+  {
+    "outputFileName": "css/styles.css",
+    "inputFiles": [
+      "css/normalize.css",
+      "css/animate.css",
+      "css/bootstrap.min.css",
+      "css/style.css",
+      "css/responsive.css"
+    ]
+  },
+  {
+    "outputFileName": "css/colors/color-blue.min.css",
+    "inputFiles": [
+      "css/colors/color-blue.css"
+    ]
+  },
+  {
+    "outputFileName": "js/jquery.sticky.min.js",
+    "inputFiles": [
+      "js/jquery.sticky.js"
+    ]
+  }
+]
