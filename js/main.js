@@ -3,7 +3,11 @@ $(window).load(function () {
     (function () {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { }
         else {
-            $.stellar({ horizontalScrolling: false, responsive: true, });
+            try {
+                $.stellar({ horizontalScrolling: false, responsive: true, });
+            } catch (e) {
+                console.log(e);
+            }
         }
     }());
 });
