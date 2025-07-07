@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
+
 <head>
     <title>Contact Us | WebAkshar Solutions Pvt. Ltd.</title>
     <meta charset="utf-8">
@@ -45,7 +46,16 @@
         ga('create', 'UA-81313707-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <style>
+        .contact-form-icon input, .contact-form-icon textarea{
+            padding-left: 10px;
+            border-radius: 0px;
+            border: 1px solid #66afe9;
+            color: #000;
+        }
+    </style>
 </head>
+
 <body>
     <header class="header-area is-sticky">
         <nav class="navbar navbar-custom tb-nav" role="navigation">
@@ -75,9 +85,67 @@
     </header>
     <section style="margin-top:20px;">
         <div class="container">
-            <h3>Get in touch with us</h3>
+            <h3 class="text-center">Get in touch with us</h3>
 
-                
+            <p class="text-center">We'd love to hear from you. Let us help you with your queries.</p>
+
+            <div class="row mt-30 mb-30">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h4>Contact Information</h4>
+                        <p><i class="fa fa-map-marker"></i> 309, 3<sup>rd</sup> Floor, Shekhawati Complex, Sindhi Camp 
+                            <br>&nbsp;&nbsp;
+                            Jaipur, Rajasthan, India, Pin - 302006</p>
+                        <p><i class="fa fa-phone"></i><a href="tel:+917742001500" class="text-primary"> +91 7742 001 500</a></p>
+                        <p><i class="fa fa-clock-o"></i> Mon &dash; Sat: 10:00 AM - 7:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <form method="POST" action="" name="contact-form" role="form">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <!-- Name Field -->
+                                <div class="form-group contact-form-icon">
+                                    <label for="name">Name</label>
+                                    <input type="text" placeholder="Name" id="name" class="form-control" style="border:1px solid #66afe9;color:#000" name="name"
+                                        required="">
+                                </div>
+                                <!-- Email Field -->
+                                <div class="form-group contact-form-icon" style="color: #000 !important">
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="Email" id="email" class="form-control" style="border:1px solid #66afe9;color:#000" name="email"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                <div class="form-group contact-form-icon">
+                                    <label for="message">Message</label>
+                                    <textarea placeholder="Message" rows="3" id="message" class="form-control" style="border:1px solid #66afe9;color:#000" name="message" required=""></textarea>
+                                </div>
+
+                                <label for="privacy-policy" style="color:#000;">
+                                    <input type="checkbox" id="privacy-policy" name="privacy-policy" value="1" required="">
+                                    &nbsp;&nbsp;I consent to receiving RCS, WhatsApp, Email or SMS from WebAkshar Technologies Pvt. Ltd. and I have reviewed and agree to the <a href="terms.htm" target="_blank" style="color:#3498db;">
+                                        Terms &amp; Conditions
+                                    </a> and <a href="privacy.htm" target="_blank" style="color:#3498db;">
+                                        Privacy Policy
+                                    </a>. 
+                                </label>
+                            </div>
+                            <div class="col-sm-5 col-md-4 text-center contact-button-padding">
+                                <br>
+                                <button class="btn-primary btn-contact btn-block" name="submit" type="submit"><i
+                                        class="fa fa-paper-plane"></i> Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <p class="mb-50">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
 
         </div>
     </section>
@@ -99,4 +167,5 @@
         </div>
     </footer>
 </body>
+
 </html>
